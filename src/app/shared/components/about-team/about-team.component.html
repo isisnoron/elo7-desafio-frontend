@@ -1,0 +1,11 @@
+<section class="team">
+  <h2>
+    Conheça nosso time <br />
+    fora de série
+  </h2>
+  <div class="photos">
+    <figure *ngFor="let item of team">
+      <img class="teste" [src]="item.src" [alt]="item.alt" />
+    </figure>
+  </div>
+</section>

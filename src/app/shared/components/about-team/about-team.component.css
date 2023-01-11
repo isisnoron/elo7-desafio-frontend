@@ -1,0 +1,31 @@
+.team {
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.photos img {
+  margin-left: 10px;
+}
+
+@media (max-width: 780px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photos img {
+    margin: 10px 0;
+  }
+}
