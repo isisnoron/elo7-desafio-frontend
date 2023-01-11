@@ -1,0 +1,38 @@
+.header {
+  justify-content: center;
+}
+
+.photo-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.foto-header {
+  z-index: -1;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  height: 77%;
+  width: 100vw;
+}
+
+.header h1 {
+  color: #ffff;
+  font-size: 51px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgb(37, 36, 36);
+  position: absolute;
+  z-index: 0;
+}
+
+.header p {
+  text-align: center;
+  padding: 0 48px;
+}
