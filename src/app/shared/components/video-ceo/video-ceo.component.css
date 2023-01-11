@@ -1,0 +1,39 @@
+.video-ceo {
+  display: flex;
+  background-color: var(--light-gray);
+  margin-top: 50px;
+  padding: 50px;
+  align-items: flex-start;
+}
+
+.ceo-saying {
+  flex-direction: column;
+  margin-left: 50px;
+  height: 220px;
+}
+
+.ceo-saying p {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.ceo-saying h2 {
+  text-align: left;
+}
+
+.ceo-saying h3 {
+  color: var(--orange);
+  font-style: italic;
+  font-weight: normal;
+}
+
+@media (max-width: 576px) {
+  .video-ceo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videoSection img {
+    margin-bottom: 40px;
+  }
+}
