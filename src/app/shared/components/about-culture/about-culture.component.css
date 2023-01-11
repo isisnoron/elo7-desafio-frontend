@@ -1,0 +1,26 @@
+.about-culture {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 20px;
+  width: auto;
+  justify-content: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.about-culture p,
+h2 {
+  line-height: 25px;
+  margin-top: 25px;
+}
+
+.about-culture p {
+  text-align: justify;
+}

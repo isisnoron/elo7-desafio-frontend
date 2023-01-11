@@ -1,0 +1,13 @@
+<section class="about-culture">
+  <div class="items" *ngFor="let item of culture">
+    <figure>
+      <img [src]="item.src" [alt]="item.alt" />
+    </figure>
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.description }}</p>
+  </div>
+</section>
+
+<aside>
+  <app-hr-link [link]="linkInfo"></app-hr-link>
+</aside>
