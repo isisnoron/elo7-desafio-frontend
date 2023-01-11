@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+:root {
+  --grey: #77777c;
+  --medium-gray: #adadbf;
+  --light-gray: #f8f8f8;
+  --orange: #fdb933;
+  --greenish: #359c9c;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: var(--grey);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-size: 22px;
+}
+
+h1 {
+  color: var(--grey);
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--greenish);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+p {
+  color: var(--grey);
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  padding: 0;
+}
