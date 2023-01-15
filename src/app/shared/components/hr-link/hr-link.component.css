@@ -1,16 +1,16 @@
 .hyperlink {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .separator {
-    width: 200px;
-    height: 1px;
-    background-color: var(--medium-gray);
-    margin: 20px 0 18px 0;
+  width: 200px;
+  height: 1px;
+  background-color: var(--medium-gray);
+  margin: 20px 0 18px 0;
 }
 
 .hyperlink a {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
