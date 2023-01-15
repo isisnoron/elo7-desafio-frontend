@@ -24,3 +24,29 @@ h2 {
 .about-culture p {
   text-align: justify;
 }
+
+@media (min-width: 768px) {
+  .items {
+    padding: 0 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-culture {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}

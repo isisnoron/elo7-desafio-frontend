@@ -36,3 +36,52 @@
   text-align: center;
   padding: 0 48px;
 }
+
+@media (min-width: 768px) {
+  .foto-header {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header p {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .foto-header {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 496px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 45px;
+  }
+
+  .header p {
+    padding: 30px;
+    text-align: justify;
+  }
+
+  .foto-header {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header p {
+    font-size: 15px;
+  }
+}

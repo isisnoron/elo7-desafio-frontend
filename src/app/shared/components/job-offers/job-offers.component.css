@@ -64,6 +64,14 @@ h3 {
   figure {
     max-width: 100%;
   }
+
+  p {
+    line-height: 18px;
+  }
+
+  .teste {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -49,3 +49,19 @@ p {
   text-align: center;
   padding: 0;
 }
+
+@media (max-width: 496px) {
+  * {
+    max-width: 100vh;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 340px) {
+  * {
+    max-width: 100%;
+  }
+}

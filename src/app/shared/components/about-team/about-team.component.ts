@@ -22,12 +22,12 @@ export class AboutTeamComponent implements OnInit {
         alt: 'Foto da funcionária Camila, mulher branca sorrindo, com cabelo liso preto e brincos de argola. '
       },
       {
-        src: 'assets/images/david.png',
-        alt: 'Foto do funcionário David, homem branco de cabelo escuro e bem aparado, usando óculos.'
-      },
-      {
         src: 'assets/images/guto.png',
         alt: 'Foto do funcionário Guto, homem branco de cabelo curto e escuro, sorrindo.'
+      },
+      {
+        src: 'assets/images/david.png',
+        alt: 'Foto do funcionário David, homem branco de cabelo escuro e bem aparado, usando óculos.'
       },
       {
         src: 'assets/images/beatriz.png',
