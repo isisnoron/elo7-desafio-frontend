@@ -7,7 +7,7 @@ import { Links } from '../../models/links';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  constructor() { }
+  constructor() {}
 
   linkInfo: Links = { icon: true, separator: true, url: '', label: '' };
 
@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
       icon: true,
       separator: true,
       label: 'Vagas em aberto',
-      url: 'vagas'
+      url: '#vagas'
     };
   }
 }
