@@ -1,0 +1,36 @@
+<section class="job-offers">
+  <figure>
+    <img
+      src="assets/images/foto-bottom.png"
+      alt="Foto tirada de cima de um galpão, de um evento com banner do Elo7, com stands de madeiras com produtos criativos e pessoas. No teto, balões coloridos enfeitam o ambiente."
+    />
+  </figure>
+
+  <nav *ngIf="jobOffers">
+    <h2 id="vagas">Vagas em aberto</h2>
+    <h3>Desenvolvimento</h3>
+
+    <div class="teste">
+      <ul class="informations">
+        <li class="job-location" *ngFor="let job of jobOffers">
+          <a href="{{ job.link }}"> {{ job.cargo }} </a>
+          <p>
+            {{
+              job.localizacao
+                ? job.localizacao.bairro +
+                  ' - ' +
+                  job.localizacao.cidade +
+                  ' - ' +
+                  job.localizacao.pais
+                : 'Remoto'
+            }}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div *ngIf="error">
+    <p class="error" id="vagas">{{ error }}</p>
+  </div>
+</section>
