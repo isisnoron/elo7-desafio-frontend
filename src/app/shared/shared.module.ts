@@ -25,7 +25,8 @@ import { HrLinkComponent } from './components/hr-link/hr-link.component';
     VideoCeoComponent,
     AboutTeamComponent,
     AboutCultureComponent,
-    JobOffersComponent
+    JobOffersComponent,
+    HrLinkComponent
   ]
 })
 export class SharedModule {}
