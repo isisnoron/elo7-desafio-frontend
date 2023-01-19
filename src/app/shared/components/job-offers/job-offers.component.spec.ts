@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { JobOffersService } from '../../services/job-offers.service';
 import { JobOffersComponent } from './job-offers.component';
 import {
@@ -9,7 +9,7 @@ import {
   mockJobOffersNull,
   mockJobOffersRemote
 } from './mocks/mocks';
-import { of } from 'rxjs';
+import { of, throwError } from 'rxjs';
 import { JobOfferActive } from '../../models/job-offer';
 
 describe('JobOffersComponent', () => {
@@ -66,6 +66,23 @@ describe('JobOffersComponent', () => {
     });
   });
 
+  it('should show error component', fakeAsync(() => {
+    const serviceErrorSpy = spyOn(service, 'getJobOffersApi').and.returnValue(throwError(() => of({ status: 404 })));
+    
+    fixture = TestBed.createComponent(JobOffersComponent);
+    component = fixture.componentInstance;
+
+    const obterCargosSpy = spyOn(component, 'obterCargos').and.callThrough();
+    component.ngOnInit();
+    fixture.detectChanges();
+    tick();
+    
+    const errorComponent = document.getElementById('vagas')
+    expect(errorComponent).toBeTruthy();
+    expect(serviceErrorSpy).toHaveBeenCalled();
+    expect(obterCargosSpy).toHaveBeenCalled();
+  }));
+
   it('should not render inactive job offers', async () => {
     await getJobOffersMockReturn(mockJobOffersInactive);
     createComponent();
@@ -76,7 +93,7 @@ describe('JobOffersComponent', () => {
     });
   });
 
-  it('should vazio', async () => {
+  it('should have check when p element is empty', async () => {
     await getJobOffersMockReturn(mockJobOffersNull);
     createComponent();
 
