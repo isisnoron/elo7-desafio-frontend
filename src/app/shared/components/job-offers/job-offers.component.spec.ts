@@ -77,7 +77,7 @@ describe('JobOffersComponent', () => {
     fixture.detectChanges();
     tick();
     
-    const errorComponent = document.getElementById('vagas')
+    const errorComponent = document.getElementById('error')
     expect(errorComponent).toBeTruthy();
     expect(serviceErrorSpy).toHaveBeenCalled();
     expect(obterCargosSpy).toHaveBeenCalled();
