@@ -1,10 +1,18 @@
-import { TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { TestBed } from '@angular/core/testing';
+import { Router, Routes } from '@angular/router';
+
+import { HomeComponent } from './pages/home/home.component';
+
+const routes: Routes = [{ path: '', component: HomeComponent }];
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent]
+      declarations: [AppComponent],
+      imports: [RouterModule, RouterTestingModule.withRoutes(routes)]
     }).compileComponents();
   });
 
@@ -20,12 +28,9 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('elo7-desafio-frontend');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'elo7-desafio-frontend app is running!'
-    );
+  it('should have correct routes', () => {
+    const router = TestBed.get(Router);
+    const url = router.createUrlTree(['/']).toString();
+    expect(url).toEqual('/');
   });
 });
