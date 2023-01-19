@@ -10,9 +10,13 @@
     <h2 id="vagas">Vagas em aberto</h2>
     <h3>Desenvolvimento</h3>
 
-    <div class="teste">
+    <div class="jobOffersActive">
       <ul class="informations">
-        <li class="job-location" *ngFor="let job of jobOffers">
+        <li
+          class="job-location"
+          *ngFor="let job of jobOffers; let i = index"
+          id="{{ i + 1 }}"
+        >
           <a href="{{ job.link }}"> {{ job.cargo }} </a>
           <p>
             {{

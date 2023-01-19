@@ -69,13 +69,13 @@ h3 {
     line-height: 18px;
   }
 
-  .teste {
+  .jobOffersActive {
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .teste,
+  .jobOffersActive,
   h3 {
     padding: 0 40px 0 40px;
   }
@@ -87,7 +87,7 @@ h3 {
     margin-top: 10%;
   }
 
-  .teste {
+  .jobOffersActive {
     padding-left: 10%;
   }
 
