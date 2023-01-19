@@ -7,7 +7,6 @@ import { Links } from 'src/app/shared/models/links';
   styleUrls: ['./under-construction.component.css']
 })
 export class UnderConstructionComponent implements OnInit {
-
   linkInfo: Links = { separator: false, url: '', label: '', icon: false };
 
   constructor() {}
