@@ -13,7 +13,7 @@ export class JobOffersComponent implements OnInit {
   constructor(private getJobOffersApi: JobOffersService) {}
 
   jobOffers!: JobOfferActive[];
-  error: any;
+  error: string = '';
 
   ngOnInit(): void {
     this.obterCargos();
