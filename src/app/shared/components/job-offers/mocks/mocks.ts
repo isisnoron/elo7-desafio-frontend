@@ -57,5 +57,3 @@ export const mockJobOffersNull: any = {
     }
   ]
 };
-
-export const mockError: Object = `Erro. Não foi possível carregar as vagas disponíveis.`;
