@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: 'http://www.mocky.io'
+  api_url: 'https://www.mocky.io'
 };
 
 /*
