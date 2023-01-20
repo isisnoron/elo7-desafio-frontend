@@ -1,3 +1,5 @@
+package-lock.json
+
 /dist
 /tmp
 /out-tsc
@@ -15,6 +17,7 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
