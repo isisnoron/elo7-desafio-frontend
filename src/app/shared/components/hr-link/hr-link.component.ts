@@ -7,7 +7,7 @@ import { Links } from '../../models/links';
   styleUrls: ['./hr-link.component.css']
 })
 export class HrLinkComponent implements OnInit {
-  @Input() link: Links = { icon: false, separator: false, url: '', label: '' };
+  @Input() link: Links = { url: '', label: '' };
 
   constructor() {}
 

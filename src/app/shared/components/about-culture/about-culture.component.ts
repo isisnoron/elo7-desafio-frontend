@@ -10,17 +10,15 @@ import { Links } from '../../models/links';
 export class AboutCultureComponent implements OnInit {
   culture: Array<Culture> = [];
 
-  linkInfo: Links = { separator: false, url: '', label: '', icon: false };
+  linkInfo: Links = { url: '', label: '' };
 
   constructor() {}
 
   ngOnInit(): void {
     this.insertCulture();
     this.linkInfo = {
-      separator: true,
       label: 'Saiba mais',
-      url: 'more-culture',
-      icon: true
+      url: 'more-culture'
     };
   }
 

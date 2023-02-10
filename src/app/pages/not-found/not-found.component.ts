@@ -7,16 +7,14 @@ import { Links } from 'src/app/shared/models/links';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent implements OnInit {
-  linkInfo: Links = { separator: false, url: '', label: '', icon: false };
+  linkInfo: Links = { url: '', label: '' };
 
   constructor() {}
 
   ngOnInit(): void {
     this.linkInfo = {
-      separator: false,
       label: 'Voltar ao início',
-      url: '',
-      icon: false
+      url: ''
     };
   }
 }

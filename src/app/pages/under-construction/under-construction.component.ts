@@ -7,16 +7,14 @@ import { Links } from 'src/app/shared/models/links';
   styleUrls: ['./under-construction.component.css']
 })
 export class UnderConstructionComponent implements OnInit {
-  linkInfo: Links = { separator: false, url: '', label: '', icon: false };
+  linkInfo: Links = { url: '', label: ''};
 
   constructor() {}
 
   ngOnInit(): void {
     this.linkInfo = {
-      separator: false,
       label: 'Página Inicial',
-      url: '',
-      icon: false
+      url: ''
     };
   }
 }

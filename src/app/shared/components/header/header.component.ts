@@ -9,12 +9,10 @@ import { Links } from '../../models/links';
 export class HeaderComponent implements OnInit {
   constructor() {}
 
-  linkInfo: Links = { icon: true, separator: true, url: '', label: '' };
+  linkInfo: Links = { url: '', label: '' };
 
   ngOnInit(): void {
     this.linkInfo = {
-      icon: true,
-      separator: true,
       label: 'Vagas em aberto',
       url: '#vagas'
     };

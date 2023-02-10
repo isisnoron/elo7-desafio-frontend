@@ -4,13 +4,20 @@
   align-items: center;
 }
 
-.separator {
+a::before {
+  content: '';
+  display: block;
   width: 200px;
   height: 1px;
   background-color: var(--medium-gray);
   margin: 20px 0 18px 0;
 }
 
+a::after {
+  content: ' »';
+}
+
 .hyperlink a {
   text-transform: uppercase;
+  text-align: center;
 }
